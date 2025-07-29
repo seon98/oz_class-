@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monster Catching Game</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <div class="game-container">
+    <header class="game-header">
+      <h1>몬스터 잡기 게임</h1>
+      <div class="game-stats">
+        <div class="score">
+          <span class="label">점수:</span>
+          <span id="score">0</span>
+        </div>
+        <div class="timer">
+          <span class="label">시간:</span>
+          <span id="timer">60</span>초
+        </div>
+        <div class="lives">
+          <span class="label">생명:</span>
+          <span id="lives">3</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="game-area" id="gameArea">
+      <div class="game-message" id="gameMessage">
+        <h2>몬스터 잡기 게임에 오신 것을 환영합니다!</h2>
+        <p>나타나는 몬스터를 클릭해서 잡으세요!</p>
+        <button id="startBtn" class="start-btn">게임 시작</button>
+      </div>
+    </div>
+
+    <div class="game-controls">
+      <button id="pauseBtn" class="control-btn" disabled>일시정지</button>
+      <button id="restartBtn" class="control-btn">다시시작</button>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
